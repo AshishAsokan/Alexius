@@ -1,0 +1,121 @@
+/*Setting outline property to none for focused input  and textarea elements*/
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+/*Setting Properties of the form element*/
+
+.contact-form {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 70%;
+    margin-left: 8%;
+}
+
+.contact-form .form-control {
+    border-radius: 1em;
+}
+
+
+/*Setting the properties of the 3 input tags*/
+
+.container .form-control {
+    width: 120%;
+    height: 60px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/*Setting vertical alignment of the name input*/
+
+.container #Name {
+    margin-top: 20px;
+}
+
+
+/*Setting the alignment properties of the text area*/
+
+textarea {
+    resize: none;
+    margin-left: 470px;
+    margin-top: 20px;
+    width: 120%;
+    border-radius: 1em;
+    position: absolute;
+    top: 0.0%;
+    height: 65%;
+    font-size: 18px;
+    padding: 10px;
+    font-family: "Arial"
+}
+
+
+/*Setting the vertical alignment of Email ID*/
+
+.container #emailID {
+    margin-top: 25px;
+}
+
+.container #no {
+    margin-top: 28px;
+}
+
+.alignTop {
+    vertical-align: middle;
+}
+
+.container #submit_but {
+    margin-top: 40px;
+}
+
+.contact-form form {
+    padding: 20%;
+}
+
+.contact-form .row {
+    margin: -7%;
+}
+
+#submit_but:hover {
+    -webkit-transition-duration: 0.4s;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.container .btnContact {
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 3%;
+    margin-left: 100%;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/Images/contact_background.png');
+}

@@ -1,0 +1,59 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    overflow: none;
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    li {
+        margin-left: 3em;
+        margin-right: 3em;
+        a {
+            transition: 0.5s color ease-in-out;
+        }
+    }
+}
+
+.hoverable {
+    display: inline-flex;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    color: #cccccc;
+    vertical-align: middle;
+    transition-duration: .3s;
+    position: relative;
+    transition-property: transform;
+}
+
+
+/* Setting properties before an option is hovered over */
+
+.hoverable:before {
+    position: absolute;
+    opacity: 0;
+    width: 90%;
+    height: 10px;
+    top: 100%;
+    content: '';
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+
+/* Changing the Y axis value when it is hovered over, active or focused */
+
+.hoverable:hover,
+.hoverable:active,
+.hoverable:focus {
+    color: white;
+    transform: translateY(-5px);
+}
+
+.hoverable:hover:before,
+.hoverable:active:before,
+.hoverable:focus:before {
+    opacity: 1;
+    transform: translateY(-5px);
+}
