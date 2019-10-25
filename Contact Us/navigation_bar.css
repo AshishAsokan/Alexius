@@ -1,18 +1,38 @@
+/* Setting properties of the navbar */
+
 nav {
-    position: fixed;
     top: 0;
-    z-index: 0;
+    display: flex;
     overflow: none;
-    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    /* width: 100%; */
+    padding: 170px;
+    width: auto;
     background: transparent;
-    overflow: hidden;
-    li {
-        margin-left: 3em;
-        margin-right: 3em;
-        a {
-            transition: 0.5s color ease-in-out;
-        }
-    }
+}
+
+
+/* Setting properties for each list item in the navbar */
+
+li {
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 20px;
+}
+
+
+/* Setting properties for each link in the navbar */
+
+a {
+    transition: 0.5s color ease-in-out;
+}
+
+#logo-navbar-middle {
+    background: transparent;
+    height: 55px;
+    max-height: 55px;
+    width: 40px;
 }
 
 .hoverable {
