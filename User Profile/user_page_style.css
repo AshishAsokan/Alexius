@@ -1,0 +1,6 @@
+/* Setting the background of the webpage and the transparency of the image */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('Images/night.jpg');
+    background-size: cover;
+}

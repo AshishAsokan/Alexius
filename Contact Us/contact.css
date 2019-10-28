@@ -12,10 +12,11 @@ textarea:focus {
 /*Setting Properties of the form element*/
 
 .contact-form {
+    position: absolute;
     margin-top: 10%;
     margin-bottom: 10%;
     width: 70%;
-    margin-left: 8%;
+    margin-left: 0.5%;
 }
 
 .contact-form .form-control {
@@ -32,6 +33,93 @@ textarea:focus {
     padding: 10px;
 }
 
+#content_1 {
+    position: absolute;
+    left: 15%;
+    top: 42%;
+}
+
+.lines {
+    border-right: medium none;
+    border-top: 3px solid white;
+    border-left: medium none;
+    width: 330px;
+    border-bottom: medium none;
+    height: 10px;
+}
+
+#line1 {
+    position: absolute;
+    top: 28%;
+    left: 75%;
+}
+
+#line2 {
+    position: absolute;
+    top: 47%;
+    left: 75%;
+}
+
+#line3 {
+    position: absolute;
+    top: 67%;
+    left: 75%;
+}
+
+#line4 {
+    position: absolute;
+    top: 87%;
+    left: 75%;
+}
+
+#heading {
+    position: absolute;
+    font-size: 30px;
+    left: 75%;
+    top: 20%;
+    color: white;
+}
+
+#content_0 {
+    position: absolute;
+    left: 27%;
+    top: 35%;
+    font-size: 30px;
+}
+
+#logo {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 30%;
+    height: 170px;
+    width: 500px;
+}
+
+.contact {
+    color: white;
+    font-family: 'Verdana';
+    font-size: 17px;
+}
+
+#contact_1 {
+    position: absolute;
+    left: 75%;
+    top: 35%;
+}
+
+#contact_2 {
+    position: absolute;
+    left: 75%;
+    top: 55%;
+}
+
+#contact_3 {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+}
+
 
 /*Setting vertical alignment of the name input*/
 
@@ -40,11 +128,19 @@ textarea:focus {
 }
 
 
+/* Setting properties for the displayed text */
+
+.message {
+    color: white;
+    font-family: 'Verdana';
+}
+
+
 /*Setting the alignment properties of the text area*/
 
 textarea {
     resize: none;
-    margin-left: 470px;
+    margin-left: 450px;
     margin-top: 20px;
     width: 120%;
     border-radius: 1em;
@@ -84,9 +180,8 @@ textarea {
 }
 
 #submit_but:hover {
-    -webkit-transition-duration: 0.4s;
     background-color: #4CAF50;
-    color: black;
+    color: white;
     border: none;
     transition-duration: 0.5s;
 }
@@ -104,18 +199,18 @@ textarea {
     cursor: pointer;
 }
 
+
+/* 
 .button {
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
 }
 
 .button:hover {
     background-color: #4CAF50;
-    /* Green */
     color: white;
-}
+} */
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/Images/contact_background.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('/Images/contact_background.png');
 }
