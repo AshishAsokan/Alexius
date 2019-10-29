@@ -1,0 +1,154 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('company.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: auto;
+}
+
+
+/* Setting properties for the avatar picture */
+
+#avatar {
+    position: absolute;
+    position: fixed;
+    left: 11%;
+    top: 20%;
+    border-radius: 100%;
+    height: 200px;
+    background-attachment: fixed;
+    width: 200px;
+}
+
+#heading {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    top: 15%;
+    left: 35%;
+}
+
+.reviews {
+    margin-top: 10%;
+}
+
+.review {
+    font-size: 20px;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    margin-left: 500px;
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+#map {
+    
+    position: absolute;
+    top:15%;
+    left: 75%;
+    position:fixed;
+    margin-left: 10px;
+    width: 325px;
+    height:75px;
+}
+
+#ratings {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    left: 75%;
+    padding: 15px;
+    top: 30%;
+    position: fixed;
+    margin-left:30px;
+}
+
+
+.star_stat {
+    display: flex;
+    margin-left: 30px;
+}
+
+i {
+    padding: 10px;
+}
+
+.lines {
+    position: fixed;
+    background-attachment: fixed;
+    border-right: medium none;
+    border-top: 3px solid white;
+    border-left: medium none;
+    width: 400px;
+    left: 5%;
+    border-bottom: medium none;
+    height: 10px;
+}
+
+#line1 {
+    position: absolute fixed;
+    top: 50%;
+}
+
+#line2 {
+    position: absolute fixed;
+    top: 78%;
+}
+
+
+/* Setting properties for the user details being displayed */
+
+.company_details {
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 5%;
+    font-size: 21px;
+    font-family: 'Verdana';
+    position: fixed;
+}
