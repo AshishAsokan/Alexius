@@ -3,4 +3,207 @@
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('Images/night.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    overflow-x: auto;
+}
+
+
+/* Setting properties for the avatar picture */
+
+#avatar {
+    position: absolute;
+    position: fixed;
+    left: 11%;
+    top: 20%;
+    border-radius: 100%;
+    height: 200px;
+    background-attachment: fixed;
+    width: 200px;
+}
+
+#heading {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    top: 15%;
+    left: 35%;
+}
+
+.reviews {
+    margin-top: 10%;
+}
+
+.review {
+    font-size: 20px;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    margin-left: 500px;
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+}
+
+#edit_profile {
+    position: absolute;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: 10%;
+    font-size: 13px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Arial';
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#edit_profile:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+#user_values {
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    left: 80%;
+    position: fixed;
+}
+
+#ratings {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    left: 75%;
+    padding: 15px;
+    top: 30%;
+    position: fixed;
+}
+
+#likes {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    left: 75%;
+    padding: 15px;
+    top: 70%;
+    position: fixed;
+}
+
+.star_stat {
+    display: flex;
+}
+
+.rating_value {
+    color: white;
+    padding: 10px;
+    vertical-align: center;
+}
+
+i {
+    padding: 10px;
+}
+
+#dislikes {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    left: 75%;
+    padding: 15px;
+    top: 75%;
+    position: fixed;
+}
+
+#comments {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    left: 75%;
+    padding: 15px;
+    top: 80%;
+    position: fixed;
+}
+
+.bars {
+    position: absolute;
+    top: 34%;
+    left: 75%;
+    padding: 10px;
+    width: 30%;
+    position: fixed;
+}
+
+.stats {
+    width: 70%;
+    height: 30px;
+    color: white;
+    border-radius: 7px;
+    border-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+#colorbar_1 {
+    width: 20%;
+    background-color: #9ca10d;
+}
+
+#colorbar_2 {
+    background-color: #1fb81a;
+}
+
+#colorbar_3 {
+    width: 40%;
+    background-color: #84b320;
+}
+
+#colorbar_4 {
+    width: 70%;
+    background-color: #1fb81a;
+}
+
+#colorbar_5 {
+    width: 15%;
+    background-color: #6f7306;
+}
+
+.lines {
+    position: fixed;
+    background-attachment: fixed;
+    border-right: medium none;
+    border-top: 3px solid white;
+    border-left: medium none;
+    width: 400px;
+    left: 5%;
+    border-bottom: medium none;
+    height: 10px;
+}
+
+#line1 {
+    position: absolute fixed;
+    top: 50%;
+}
+
+#line2 {
+    position: absolute fixed;
+    top: 78%;
+}
+
+
+/* Setting properties for the user details being displayed */
+
+.user_details {
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 5%;
+    font-size: 21px;
+    font-family: 'Verdana';
+    position: fixed;
 }

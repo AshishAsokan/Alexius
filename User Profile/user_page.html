@@ -5,15 +5,15 @@
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="navigation_bar.css" type="text/css">
     <link rel="stylesheet" href="user_page_style.css" type="text/css">
 </head>
 
-<body>
-
+<body overflow-x: auto overflow-y: auto>
     <!-- Adding navigation bar items -->
     <div class="topnav">
         <nav class="navbar navbar-default navbar-expand-sm shadow nav-fill w-100">
@@ -34,6 +34,91 @@
             </ul>
         </nav>
     </div>
+    <img id="avatar" src="Images/img_avatar.png">
+    <hr class="lines" id="line1">
+    <div class="user_details">
+        <label class="text_detail">Name: <label id="user_name">John Smith</label></label><br />
+        <label class="text_detail">Email ID: <label id="user_emailID">johnsmith@gmail.com</label></label><br />
+        <label class="text_detail">Username: <label id="user_username">John_Smith_boi</label></label><br />
+        <label class="text_detail">Phone No: <label id="user_phoneno">1234567890</label></label><br />
+        <button id="edit_profile">Account Settings</button>
+    </div>
+    <!-- <button id="edit_profile">Account Settings</button> -->
+    <hr class="lines" id="line2">
+
+    <div class="reviews">
+        <label id="heading">John Smith's Reviews</label>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+        <fieldset class="review">
+            Place: abc <br /> Name: abc <br /> Class: abc
+        </fieldset>
+    </div>
+
+    <!-- div element for adding progress bar -->
+    <div class="user_stats">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        <label id="user_values">About John Smith</label>
+        <label id="ratings">Rating Distribution</label>
+        <div class="container">
+            <!-- <label id="likes">Number of Likes : 10</label> -->
+            <p id="likes">Number of likes: <label id="no_of_likes">10</label><i class="fa fa-thumbs-o-up"></i></p>
+        </div>
+        <div class="container">
+            <!-- <label id="likes">Number of Likes : 10</label> -->
+            <p id="dislikes">Number of dislikes: <label id="no_of_dislikes">10</label><i class="fa fa-thumbs-o-down"></i></p>
+        </div>
+        <!-- <label id="dislikes">Number of Dislikes: <label id="no_of_dislikes">10</label></label> -->
+        <div class="container">
+            <!-- <label id="likes">Number of Likes : 10</label> -->
+            <p id="comments">Number of comments: <label id="no_of_comments">10</label><i class="fa fa-commenting-o"></i></p>
+        </div>
+        <div class="bars">
+            <div class="star_stat">
+                <div class="stats" id="colorbar_1">5 Stars</div>
+                <div class="rating_value">10</div>
+            </div>
+            <div class="star_stat">
+                <div class="stats" id="colorbar_2">4 Stars</div>
+                <div class="rating_value">5</div>
+            </div>
+            <div class="star_stat">
+                <div class="stats" id="colorbar_3">3 Stars</div>
+                <div class="rating_value">50</div>
+            </div>
+            <div class="star_stat">
+                <div class="stats" id="colorbar_4">2 Stars</div>
+                <div class="rating_value">60</div>
+            </div>
+            <div class="star_stat">
+                <div class="stats" id="colorbar_5">1 Star</div>
+                <div class="rating_value">125</div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
