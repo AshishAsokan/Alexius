@@ -1,0 +1,79 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+  height:20px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('Login_bground.png');
+    background-size: cover;
+
+}
+.spl{
+	padding-left: 30px;
+}
+#head{
+	padding-left: 40px;
+	padding-top: 20px;
+	color:white;
+}
+.recomm{
+	padding-left:75px;
+}
+#business{
+	padding-left: 40px;	
+}
+
+.review {
+    font-size: 20px;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    margin-left: 500px;
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    align-self: right;
+
+}
+.reviews{
+	position: absolute;
+	    top:40%;
+    left:25%;
+}

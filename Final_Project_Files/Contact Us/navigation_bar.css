@@ -1,0 +1,79 @@
+/* Setting properties of the navbar */
+
+nav {
+    top: 0;
+    display: flex;
+    overflow: none;
+    text-align: center;
+    justify-content: space-around;
+    /* width: 100%; */
+    padding: 170px;
+    width: auto;
+    background: transparent;
+}
+
+
+/* Setting properties for each list item in the navbar */
+
+li {
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 20px;
+}
+
+
+/* Setting properties for each link in the navbar */
+
+a {
+    transition: 0.5s color ease-in-out;
+}
+
+#logo-navbar-middle {
+    background: transparent;
+    height: 55px;
+    max-height: 55px;
+    width: 40px;
+}
+
+.hoverable {
+    display: inline-flex;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    color: #cccccc;
+    vertical-align: middle;
+    transition-duration: .3s;
+    position: relative;
+    transition-property: transform;
+}
+
+
+/* Setting properties before an option is hovered over */
+
+.hoverable:before {
+    position: absolute;
+    opacity: 0;
+    width: 90%;
+    height: 10px;
+    top: 100%;
+    content: '';
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+
+/* Changing the Y axis value when it is hovered over, active or focused */
+
+.hoverable:hover,
+.hoverable:active,
+.hoverable:focus {
+    color: white;
+    transform: translateY(-5px);
+}
+
+.hoverable:hover:before,
+.hoverable:active:before,
+.hoverable:focus:before {
+    opacity: 1;
+    transform: translateY(-5px);
+}

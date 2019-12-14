@@ -1,0 +1,104 @@
+            input:focus{
+                outline: none;
+            }
+            
+            
+            /*Setting Properties of the form element*/
+            .sign_up-form{
+                margin-top: 0.01%;
+                
+                width: 100%;
+                padding-bottom: 10%;
+
+            }
+            .sign_up-form .form-control{
+                border-radius: 1em;
+
+            }
+            
+            /*Setting the properties of the 3 input tags*/
+            .container .form-control{
+                width: 110%;
+                height: 55px;
+                font-size: 20px;
+                padding: 10px;
+
+            }
+            
+            /*Setting vertical alignment of the name input*/
+            .container #name{
+               float:left;
+            }
+            .container #username{
+                margin-left:500px;
+            }
+            .container #dob{
+                margin-top:25px;
+                float: left;
+                
+            }
+            .container #emailID{
+               margin-top:25px; 
+               margin-left:500px;
+            }
+            /*Setting the vertical alignment of Email ID*/
+            .container #password{
+                margin-top: 25px;
+                float:left;
+            }
+            .container #cpassword{
+                margin-top: 25px;
+                margin-left:500px;
+
+            }
+                .alignTop{
+                vertical-align: middle;
+            }
+            .container #submit_but{
+                margin-top: 35px;
+                margin-left:335px; 
+            }
+            .sign_up-form form{
+                padding: 20%;
+            }
+            .sign_up-form .row{
+                margin: -7%;
+            }
+            #submit_but:hover{
+                -webkit-transition-duration: 0.4s;
+                background-color: #4CAF50;
+                color: black;
+                border: none;
+                transition-duration: 0.5s;
+            }
+            .container .btnContact{
+                width: 60%;
+                border: 2px solid white;
+                border-radius: 20px;
+                padding: 3%;
+                margin-left: 62%;
+                font-size: 15px;
+                background-color: transparent;
+                color: white;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            
+            .button {
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+            }
+            .button:hover {
+                background-color: #4CAF50; /* Green */
+                color: white;
+            }
+            body{
+                background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('images/signup2.jpeg');
+                background-size: cover;
+            }
+            
+            #div1{
+                text-align:center;
+                margin-left: 100px;
+                margin-top: 60px;
+            }
